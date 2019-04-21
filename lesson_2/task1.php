@@ -131,16 +131,3 @@ $hour = date('G');
 $minute = date('i');
 
 echo "$hour ".pluralize($hour,'час','часа','часов')." $minute ".pluralize($minute,'минута','минуты','минут');
-
-
-
-
-
-
-
-
-
-
-
-
-
