@@ -105,11 +105,12 @@ function transliter($text) {
     $splittext = preg_split('//u', $text);
     
     foreach ($splittext as $rusLetter) {
-        $letter = LITER[$rusLetter];
+        $isLowLetter = mb_strtolower($rusLetter) === $rusLetter;
+        $letter = LITER[mb_strtolower($rusLetter)];
         if (empty($letter))
             $temp .= $rusLetter;
         else
-            $temp .= $letter;
+            $temp .= $isLowLetter ? $letter : mb_strtoupper($letter);
     }
     return $temp;
 }
@@ -157,12 +158,12 @@ function transliterNew($text) {
     $splittext = preg_split('//u', $text);
     
     foreach ($splittext as $rusLetter) {
-        $letter = $newLiter[$rusLetter];
-        if (empty($letter)) {
+        $isLowLetter = mb_strtolower($rusLetter) === $rusLetter;
+        $letter = $newLiter[mb_strtolower($rusLetter)];
+        if (empty($letter))
             $temp .= $rusLetter;
-        } else {
-            $temp .= $letter;
-        }
+        else
+            $temp .= $isLowLetter ? $letter : mb_strtoupper($letter);
     }
     return $temp;
 }
