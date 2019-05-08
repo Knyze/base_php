@@ -1,0 +1,61 @@
+.container {
+    margin: 100px auto;
+    width: 1200px;
+}
+
+.postPhotoForm {
+    margin-bottom: 30px;
+    width: inherit;
+    display: flex;
+    justify-content: flex-end;
+
+    input[type="file"] {
+        margin-right: 20px;
+        direction: rtl;
+        flex-grow: 1;
+    }
+
+}
+
+.wrap {
+
+    //display: flex;
+    //flex-wrap: wrap;
+    //justify-content: space-between;
+    //background-color: ghostwhite;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: 250px;
+
+    .imgWrap {
+        //height: 250px;
+        //width: 400px;
+        //border: 1px solid #cccccc;
+        //box-sizing: border-box;
+        display: flex;
+        flex-direction: column;
+
+        & > img {
+            margin: 0 auto;
+            height: 200px;
+            cursor: pointer;
+        }
+        
+        h4 {
+            margin: 0;
+            margin-top: 5px;
+            text-align: center;
+        }
+
+//        & > img:nth-child(n + 4) {
+//            margin-top: 30px;
+//        }
+
+    }
+
+//    .imgWrap:nth-child(n+4) {
+//        border-top: none;
+//    }
+
+
+}
