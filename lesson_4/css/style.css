@@ -1,0 +1,1 @@
+.container{margin:100px auto;width:1200px}.postPhotoForm{margin-bottom:30px;width:inherit;display:flex;justify-content:flex-end}.postPhotoForm input[type="file"]{margin-right:20px;direction:rtl;flex-grow:1}.wrap{display:flex;flex-wrap:wrap;justify-content:space-between;background-color:ghostwhite}.wrap>img{height:200px;cursor:pointer}.wrap>img:nth-child(n+4){margin-top:30px}
