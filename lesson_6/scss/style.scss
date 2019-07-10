@@ -1,0 +1,13 @@
+.calc {
+    width: 450px;
+    max-height: 450px;
+    background-color: floralwhite;
+    margin: 15px;
+    border: 1px solid black;
+    
+    .field {
+        background-color: white;
+        min-height: 100px;
+        text-align: right;
+    }
+}
